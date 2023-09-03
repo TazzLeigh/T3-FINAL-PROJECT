@@ -6,16 +6,16 @@ Login to your Github Account and use the link provided to download the file
 ##Built with
 HTML, CSS, Javascript
 
-##Contributing
+## Contributing
 If you wish to contribute how to improve this project, please do not hesitate to contact me at 231023@virtualwindow.co.za
 
 ##Authors
 Tarryn-Leigh Tong-Lead Developer 231023@virtualwindow.co.za
 
-##License
+## License
 Creative Commons License
 
-##Acknowledgments
+## Acknowledgments
 Big thanks to the below for providing assistance on this project
 https://elfsight.com/-Weather Widget
 https://www.youtube.com/@NetNinja/-Coding assistance
@@ -24,7 +24,7 @@ https://www.pexels.com/-Royalty free stock images
 Celeste Van Tonder-Support
 Lorrayne Van Tonder-Support
 
-##Video link to Website Tour
+## Video link to Website Tour
 https://youtu.be/HyHRd3W0ROQ
 
 
