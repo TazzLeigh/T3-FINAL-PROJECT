@@ -28,12 +28,12 @@ Lorrayne Van Tonder-Support
 https://youtu.be/HyHRd3W0ROQ
 
 ## Website Screenshots
+![Screenshot 2023-09-03 191110](https://github.com/TazzLeigh/T3-FINAL-PROJECT/assets/125860291/c16ef658-a20e-49d1-95d7-1de6baf7ec4d)
 ![Screenshot 2023-09-03 191226](https://github.com/TazzLeigh/T3-FINAL-PROJECT/assets/125860291/3508c828-e6cd-45aa-bd97-4a65e8cf317a)
 ![Screenshot 2023-09-03 191203](https://github.com/TazzLeigh/T3-FINAL-PROJECT/assets/125860291/a8d4a601-6601-4efd-8c6a-c4c63eda5164)
-![Screenshot 2023-09-03 191110](https://github.com/TazzLeigh/T3-FINAL-PROJECT/assets/125860291/c16ef658-a20e-49d1-95d7-1de6baf7ec4d)
+
 
 ## Plagarism Document
-
 [Tarryn-Leigh Tong_231023_Plagarism doc.pdf](https://github.com/TazzLeigh/T3-FINAL-PROJECT/files/12507162/Tarryn-Leigh.Tong_231023_Plagarism.doc.pdf)
 
 
