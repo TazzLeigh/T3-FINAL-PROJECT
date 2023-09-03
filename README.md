@@ -3,6 +3,7 @@
 The final project for DV100 for term 3
 ## Getting started
 Login to your Github Account and use the link provided to download the file
+https://github.com/TazzLeigh/T3-FINAL-PROJECT.git
 ## Built with
 HTML, CSS, Javascript
 
