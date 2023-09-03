@@ -1,3 +1,114 @@
 /* Fonts */
 
 /* Nav Bar */
+.navbar-custom {
+    background-color: navy;
+ 
+  }
+  .navbar a {
+    color: white; /* Set the text color to white */
+    text-decoration: none; /* Remove underlines from links (optional) */
+}
+/* Carousel */
+
+/* Cards */
+.card{
+  position: flex;
+  margin: 10px;
+}
+
+/* Filter*/
+.filterDiv {
+ 
+  width: 100px;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+/* check out */
+.checkout-button {
+  display: block;
+  margin-right: 20px; /* Add right margin for spacing */
+  float: right; /* Float the button to the right */
+}
+.thank-you-container {
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.thank-you-message {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/*Weather Widget*/
+/* Style for the weather card */
+.weather-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for weather icon */
+.weather-icon {
+  font-size: 48px;
+}
+
+/* Style for weather details */
+.weather-container {
+  font-size: 18px;
+  margin-top: 10px;
+}

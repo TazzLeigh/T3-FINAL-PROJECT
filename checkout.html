@@ -15,84 +15,117 @@
 </head>
 <body>
 <!---Nav Bar--->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-        <!--Logo-->  
-        <a class="navbar-brand" href="/index.html">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                
-            <!--Trips-->
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/cruises.html">Cruises</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
+<nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container-fluid">
+  <!-- Logo -->
+  <a class="navbar-brand" href="index.html">
+    <img src="Assets/pdfCruise control logo@3x.png" alt="Logo" height="50">
+</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/cruises.html">Book a Cruise</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Our Fleet</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                More
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Onboard Experience</a></li>
+                    <li><a class="dropdown-item" href="#">Cruise Gifts</a></li>
+                    <li><a class="dropdown-item" href="#">Help Center</a></li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-  </nav> 
+            </li>
+          </ul>
+          
+      </div>
+  </div>
+</nav>
 <!----------------------------------------------------------------------------------------------------------------------------->
   <!--Table-->
-  <<div class="container">
-    <table class="table table-bordered table-hover">
-      <thead>
-        <tr>
-          <th>Trip code</th>
-          <th>Cruise Name</th>
-          <th>Price</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!--Item 1-->
-        <tr id="item1">
-          <td><img src="assets/plant1.png" alt="Image 1" class="img-fluid"></td>
-          <td>Cruise1 </td>
-          <td>R200</td>
-          <td>
-            <button type="button" class="btn1 btn-primary btn-sm" onclick="removeItem('item1')">Remove</button>
-          </td>
-        </tr>
-        <!--Item 2-->
-        <tr id="item2">
-          <td><img src="/assets/plant3.png" alt="Image 2" class="img-fluid"></td>
-          <td>Cruise2</td>
-          <td>R210</td>
-          <td>
-            <button type="button" class="btn2 btn-primary btn-sm" onclick="removeItem('item2')">Remove</button>
-          </td>
-        </tr>
-        <!--Item 3-->
-        <tr id="item3">
-          <td><img src="assets/plant5.png" alt="Image 3" class="img-fluid"></td>
-          <td>Cruise3</td>
-          <td>R230</td>
-          <td>
-            <button type="button" class="btn3 btn-primary btn-sm" onclick="removeItem('item3')">Remove</button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
+    <div class="container">
+      <div class="row">
+          <div class="col-6">
+            <table class="table">
+              <thead>
+                  <tr>
+                      <th>Cruise Name</th>
+                      <th>Cruise Code</th>
+                      <th>Cost</th>
+                      <th>Actions</th> <!-- Added column for actions -->
+                  </tr>
+              </thead>
+              <tbody>
+                  <!-- Add your table rows here -->
+                  <tr>
+                      <td>Venetian Serenade</td>
+                      <td>VSR2023CRUISE</td>
+                      <td>$4,000.00</td>
+                      <td>
+                          <button class="btn btn-primary">Remove</button>
+                      </td> <!-- Added remove button -->
+                  </tr>
+                  <tr>
+                      <td>Frozen Frontier</td>
+                      <td>ARC2023EXPLORE</td>
+                      <td>$4,500.00</td>
+                      <td>
+                          <button class="btn btn-primary">Remove</button>
+                      </td> <!-- Added remove button -->
+                  </tr>
+                  <!-- Add more rows for other cruises -->
+              </tbody>
+              <tfoot>
+                  <tr>
+                      <td></td>
+                      <td></td>
+                      <td>Total:</td>
+                      <td id="totalCost">$8,500.00</td> <!-- This is where the total cost will be displayed -->
+                  </tr>
+              </tfoot>
+          </table>
+      </div> <!--col-6-->
+      <div class="col-6">
+        <div class="thank-you-container">
+          <div class="thank-you-message">Thank You!</div>
+          <div class="button-container">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Checkout
+            </button>
+            <a href="/cruises.html" class="button">Continue Browsing</a>
+          </div>
+      </div><!--Thank you container-->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Success!</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              You're booking has been confirmed. Thank you for choosing Cruise Control
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+        
+      </div>
+      </div>
+     
     <!--------------------------------------------------------------------------------------------------------------------->
     </body>
 </html>
+
+
+
+

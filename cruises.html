@@ -15,56 +15,71 @@
 </head>
 <body>
 <!---Nav Bar--->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-        <!--Logo/Home-->  
-        <a class="navbar-brand" href="/index.html">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <!--Trips-->
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/cruises.html">Cruises</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
+<nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+    <!-- Logo -->
+    <a class="navbar-brand" href="index.html">
+      <img src="Assets/pdfCruise control logo@3x.png" alt="Logo" height="50">
+  </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/cruises.html">Book a Cruise</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="#">Our Fleet</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  More
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Onboard Experience</a></li>
+                      <li><a class="dropdown-item" href="#">Cruise Gifts</a></li>
+                      <li><a class="dropdown-item" href="#">Help Center</a></li>
+                  </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
         </div>
-  </nav> 
+    </div>
+</nav>
 <!----------------------------------------------------------------------------------------------------------------------------->
-  <!--Trips cards-->
-  <div class="container mt-5 pt-5">
-    <div class="row">
-          <!--Card 1-->
-        <div class="col-3">
+<!--Search Filter Buttons-->
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('long')"> long</button>
+  <button class="btn" onclick="filterSelection('short')">short</button>
+  <button class="btn" onclick="filterSelection('low')">Price:Low</button>
+  <button class="btn" onclick="filterSelection('high')">Price:High</button>
+</div>
+<!-- Add a "Go to Checkout" button aligned to the right -->
+ <a href="checkout.html" class="checkout-button">
+    <button>Go to Checkout</button>
+</a>
+
+<div class="container">
+  
+    <div class="filterDiv long">
+        <div class="row">
+        <!--Venice-->
+        <div class="col">
             <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+                <img src="Assets/pdfVenice2@3x.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title">Venetian Serenade</h5>
+                <p class="card-text">Venice Awaits: Sail the Canals, Savor Italian Flavors. Book Now for a Magical Venice Cruise Experience!</p>
                 </div>
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Cruise Name</li>
-                  <li class="list-group-item">A second item</li>
-                  <li class="list-group-item">Price:</li>
+                
+                <li class="list-group-item">Cruise code: VSR2023CRUISE </li>
+                <li class="list-group-item">Price: $4000.00</li>
                 </ul>
                 <div class="card-body">
                     <!--Trips Controls-->
@@ -75,24 +90,23 @@
                         <button class="btn btn-primary" type="button">
                             Book Cruise
                         </button>
-                      </div>
+                    </div>
                 </div>
-              </div>
-<!--card--></div>
-<!--Card 2-->
-<div class="col-3">
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Cruise Name</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">Price:</li>
-        </ul>
-        <div class="card-body">
+            </div>
+        </div><!--Venice-->
+        <!--Caribbean-->
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+            <img src="Assets/pexels-engin-akyurt-2992314.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Caribbean Dreams</h5>
+            <p class="card-text">Escape to a world of sun-kissed beaches, crystal-clear waters, and tropical adventures. Explore the Caribbean's hidden treasures aboard our luxurious cruise.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+            <li class="list-group-item">Cruise Code:CARIB2023CRUISE</li>
+            <li class="list-group-item">Price: $3500.00</li>
+            </ul>
+            <div class="card-body">
             <!--Trips Controls-->
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                 <button class="btn btn-primary me-md-2" type="button">
@@ -101,24 +115,22 @@
                 <button class="btn btn-primary" type="button">
                     Book Cruise
                 </button>
-              </div>
-        </div>
-      </div>
-<!--card--></div>
-<!--Card 3-->
-<div class="col-3">
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Cruise Name</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">Price:</li>
-        </ul>
-        <div class="card-body">
+                </div>
+            </div>
+            </div>
+        </div><!--Caribbean-->
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+            <img src="Assets/pdfArctic_1@3x.png" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Frozen Frontier</h5>
+            <p class="card-text">Embark on the ultimate Arctic expedition. Discover the frozen wonders, wildlife, and pristine landscapes of the North. Unforgettable memories await</p>
+            </div>
+            <ul class="list-group list-group-flush">
+            <li class="list-group-item">Cruise code: ARC2023EXPLORE</li>
+            <li class="list-group-item">Price: $4500.00</li>
+            </ul>
+            <div class="card-body">
             <!--Trips Controls-->
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                 <button class="btn btn-primary me-md-2" type="button">
@@ -127,41 +139,111 @@
                 <button class="btn btn-primary" type="button">
                     Book Cruise
                 </button>
-              </div>
-        </div>
-      </div>
-<!--card--></div>
-<!--Card 4-->
-<div class="col-3">
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
+                </div>
+            </div>
+            </div>
+        </div><!--Caribbean-->
+    </div><!--row-->
+</div><!--long-->
+  
+<div class="filterDiv short">
+    <!--Quick-->
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+        <img src="Assets/pexels-pixabay-373409.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <h5 class="card-title">Quick Getaway</h5>
+        <p class="card-text">Join us for a Quick Getaway Cruise, a brief yet exhilarating escape from the everyday. Unwind, explore, and make the most of your precious time at sea.</p>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">Cruise Name</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">Price:</li>
+        <li class="list-group-item">Cruise Code:QUICK2023CRUISE</li>
+        <li class="list-group-item">Price: $1000.00</li>
         </ul>
         <div class="card-body">
-            <!--Trips Controls-->
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <button class="btn btn-primary me-md-2" type="button">
-                    More Info
-                </button>
-                <button class="btn btn-primary" type="button">
-                    Book Cruise
-                </button>
-              </div>
+        <!--Trips Controls-->
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-primary me-md-2" type="button">
+                More Info
+            </button>
+            <button class="btn btn-primary" type="button">
+                Book Cruise
+            </button>
+            </div>
         </div>
-      </div>
-<!--card--></div>
-       
-<!--row--></div>
+        </div>
+        </div><!--Quick-->
+</div><!--short-->
+  
+  <div class="filterDiv low">
+     <!--Quick-->
+     <div class="col">
+        <div class="card" style="width: 18rem;">
+        <img src="Assets/pexels-pixabay-373409.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">Quick Getaway</h5>
+        <p class="card-text">Join us for a Quick Getaway Cruise, a brief yet exhilarating escape from the everyday. Unwind, explore, and make the most of your precious time at sea.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+        <li class="list-group-item">Cruise Code:QUICK2023CRUISE</li>
+        <li class="list-group-item">Price: $1000.00</li>
+        </ul>
+        <div class="card-body">
+        <!--Trips Controls-->
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-primary me-md-2" type="button">
+                More Info
+            </button>
+            <button class="btn btn-primary" type="button">
+                Book Cruise
+            </button>
+            </div>
+        </div>
+        </div>
+        </div><!--Quick-->
+
+  </div>
+  
+  <div class="filterDiv high">
+    <div class="row">
+<!--Card 5-->
+<div class="col">
+    <div class="card" style="width: 18rem;">
+    <img src="Assets/pexels-pixabay-248771.jpg  " class="card-img-top" alt="...">
+    <div class="card-body">
+    <h5 class="card-title">Globetrotter Odyssey</h5>
+    <p class="card-text">Embark on the journey of a lifetime with our Globetrotter Odyssey World Cruise. Sail across oceans, explore diverse cultures, and make memories that span the globe.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+    <li class="list-group-item">Cruise Code:WORLD2023CRUISE</li>
+    <li class="list-group-item">Price: $10 0000.00</li>
+    </ul>
+    <div class="card-body">
+      <!--Trips Controls-->
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <button class="btn btn-primary me-md-2" type="button">
+              More Info
+          </button>
+          <button class="btn btn-primary" type="button">
+              Book Cruise
+          </button>
+        </div>
+    </div>
+    </div>
+    <!--card--></div>
+
+
+
+
+  </div>
+  
+</div><!--container-->
+
     
 
-<!--container-->  </div>
+   
+  
+
+
     <!--------------------------------------------------------------------------------------------------------------------->
     </body>
 </html>
