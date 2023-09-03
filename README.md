@@ -1,4 +1,4 @@
-![image](https://github.com/TazzLeigh/T3-FINAL-PROJECT/assets/125860291/091d84db-0f31-4d16-9675-7b93fe7dbf44)# T3-FINAL-PROJECT
+# T3-FINAL-PROJECT
 ## About this project
 The final project for DV100 for term 3
 ##Getting started
