@@ -1,18 +1,24 @@
-$(document).ready(function() {
-  getWeather();
-  });
+
+
 
 //Checkout//
   //Remove Item Button
-  $(".btn1").click(function(){
-    $("#item1").remove();
-    })
-  $(".btn2").click(function(){
-    $("#item2").remove();
-      })
-  $(".btn3").click(function(){
-    $("#item3").remove();
-        })
+  // Remove Item Button
+
+ 
+function removeItem(itemId) {
+  // Find the table row with the given itemId
+  var row = document.getElementById(itemId);
+  
+  // Check if the row exists
+  if (row) {
+    // Remove the row from the table
+    row.remove();
+  }
+}
+
+
+
 // Search Filter//
 filterSelection("all")
 function filterSelection(c) {
@@ -48,7 +54,7 @@ function w3RemoveClass(element, name) {
 
 // Add active class to the current button (highlight it)
 var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
+var btns = btnContainer.getElementsByClassName("butt");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function(){
     var current = document.getElementsByClassName("active");
@@ -57,7 +63,7 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
-//Sucess Modal//
+//Success Modal//
 
  // Get the modal and buttons
  var modal = document.getElementById("successModal");
@@ -90,31 +96,3 @@ myModal.addEventListener('shown.bs.modal', () => {
 })
 
 //Weather Widget//
-function loadWeather (){
-
-  for(let i = 0; i < weatherArray.length; i++){
-      const weather = weatherArray[i];
-      
-      $.ajax({
-          type: "GET",
-          url: "https://api.openweathermap.org/data/2.5/weather?q=" + weather.city +"&appid=2e69876c9344bbafe48bcf1b99faf2b1",
-          success: function(data){
-              temp = data
-              console.log(data);
-          }
-        }).done(function(){
-          $(currentWeather).find("#minMaxTemp").text(Math
-function loadWeather (){
-
-  for(let i = 0; i < weatherArray.length; i++){
-      const weather = weatherArray[i];
-      
-      $.ajax({
-          type: "GET",
-          url: "https://api.openweathermap.org/data/2.5/weather?q=" + weather.city +"&appid=2e69876c9344bbafe48bcf1b99faf2b1",
-          success: function(data){
-              temp = data
-              console.log(data);
-          }
-        }).done(function(){
-          $(currentWeather).find("#minMaxTemp").text(Math

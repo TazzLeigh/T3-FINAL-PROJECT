@@ -13,13 +13,12 @@
 
 /* Cards */
 .card{
-  position: flex;
+  
   margin: 10px;
 }
 
 /* Filter*/
 .filterDiv {
- 
   width: 100px;
   margin: 2px;
   display: none;
@@ -29,10 +28,6 @@
   display: block;
 }
 
-.container {
-  margin-top: 20px;
-  overflow: hidden;
-}
 
 .btn {
   border: none;
